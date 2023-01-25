@@ -5,8 +5,8 @@
         <meta name="description" content = 'Personal Website for Deeana Nasrulai'>
         <meta name="keywords" content = 'professional, data science, biochemist, chemistry, data analysis'>
         <meta name="author" content = 'Deeana Nasrulai'>
-        <title>Resume</title>
-        <link rel="stylesheet" href="/Users/deeananasrulai/Documents/personal website/css/style.css">
+        <title>Deeana Nasrulai</title>
+        <link rel="stylesheet" href="../PersonalWebsite/css/style.css">
     </head>
     <body>
         <header>
@@ -16,40 +16,66 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href ="index.html">About</a></li>
+                        <li class= "current"><a href ="index.html">About</a></li>
                         <li><a href ="resume.html">Resume</a></li>
-                        <li class="current"><a src ="projects.html">Projects</a></li>
+                        <li><a href ="projects.html">Projects</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <section id = 'main'>
-            <div class  ='container'>
-             <article id=" main-col">
-                <h1 class= "page-title">Deeana's Projects</h1>
-                <p>Throughout Deeana's education at the University of Washington, 
-                    she gained a multitude of experience in programming languages such 
-                    as java, R, and html. Provided below are some projects Deeana has 
-                    worked on that shows her skills in these languages. </p>
-                    <h2>Projects Produced Using R Script:</h2>
-                <ul id="Projects">
-                    <li>
-                         <h3><a href="https://behbaes.shinyapps.io/soccerapp/">Analysis of International Soccer Data</a></h3>
-                    </li>
-                    <li>
-                        <h3><a href="https://info201a-au2022.github.io/a4-Deeananas/">U.S. Jail Population Data Visualization</a></h3>
-                    </li>
-                        <h2>Projects Produced Using R Script:</h2>
-                        <li>
-                        <h3>Current Personal Website Built Entirely Using HTML<a href =""></a>(Link to Source Code)</h3>
-                    </li>
-                </ul>
-             </article>   
-           </div>
+        <section id = "showcase">
+            <div class = "container">
+                <h1>Welcome to Deeana's Personal Website</h1>
+                <p>Deeana Nasrulai is currently a student at the University of Washington studying Biochemistry and Data Science.</p>
+                <img src="../PersonalWebsite/images/Film-38.jpg">
+                <p>Text.........</p>
+            </div>
+        
         </section>
 
-        
+        <section id = 'boxes'>
+            <div class  ='container'>
+                <h1>Get in Touch: </h1>  
+            </div>
+                <div class = 'box'>
+                    <h3>LinkedIn Profile</h3>
+                    <a href="https://www.linkedin.com/in/deeana-nasrulai-15b35b231"><img src="./images/linkedinlogo.png"></a>
+                    
+                </div>
+                <div class = 'box'>
+                    <h3>Handshake Profile</h3>
+                    <a href="https://app.joinhandshake.com/stu/users/35955270"><img src="./images/handshakelogo.png"></a>
+                </div>
+        </section>
+
+        <section id="contactinfo" >
+            <div class = 'container'>
+                <h3>Contact Me via Email</h3>
+                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                </form>
+                        <label for="Name" class="fcf-label">Your name</label>
+                        <div class="fcf-input-group">
+                            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                        </div>
+                    <div class="fcf-form-group">
+                        <label for="Email" class="fcf-label">Your email address</label>
+                        <div class="fcf-input-group">
+                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        </div>
+                    <div class="fcf-form-group">
+                        <label for="Message" class="fcf-label">Your message</label>
+                        <div class="fcf-input-group">
+                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                        </div>
+                    </div>
+                    <div class="fcf-form-group">
+                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+                       
+                    </div>
+                    
+            </div>
+        </section>
 
 
     </body>
